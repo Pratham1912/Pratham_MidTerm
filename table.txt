@@ -1,0 +1,21 @@
+CREATE DATABASE art_gallery;
+
+USE art_gallery;
+
+CREATE TABLE users (
+    UserID INT AUTO_INCREMENT PRIMARY KEY,
+    Username VARCHAR(50) NOT NULL,
+    Email VARCHAR(100) NOT NULL,
+    Password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE artworks (
+    ArtworkID INT AUTO_INCREMENT PRIMARY KEY,
+    Title VARCHAR(100) NOT NULL,
+    Artist VARCHAR(100) NOT NULL,
+    Description TEXT NOT NULL,
+    Price DECIMAL(10, 2) NOT NULL,
+    Medium VARCHAR(100) NOT NULL,
+    Size VARCHAR(50) NOT NULL,
+    Image VARCHAR(255) NOT NULL
+);

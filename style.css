@@ -1,0 +1,111 @@
+/* General Body Styles */
+body {
+    background-color: #f0f4f8; /* Lighter grey background for a softer look */
+    font-family: 'Arial', sans-serif; /* Font family */
+    color: #333333; /* Darker grey text for better contrast */
+}
+
+/* Heading Styles */
+h2 {
+    color: #1a73e8; /* Bootstrap primary color for headings */
+    text-align: center; /* Centered heading */
+    margin-bottom: 30px; /* Space below the heading */
+    font-weight: bold; /* Make the text bold */
+}
+
+/* Card Styles */
+.card {
+    border: 1px solid #e0e0e0; /* Light grey border for cards */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transform on hover */
+}
+
+.card:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Card Image Styles */
+.card img {
+    height: 200px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+    border-top-left-radius: 10px; /* Rounded corners */
+    border-top-right-radius: 10px; /* Rounded corners */
+}
+
+/* Button Styles */
+.btn-primary {
+    background-color: #28a745; /* New green color for primary button */
+    border-color: #28a745; /* Remove border */
+    border-radius: 20px; /* Rounded buttons */
+    padding: 10px 20px; /* Increased padding */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    /* animation: dance 1s infinite alternate; Add dance animation */
+}
+
+.btn-primary:hover {
+    background-color: #218838; /* Darker green on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+    animation: none; /* Stop dancing on hover */
+}
+
+.btn-danger {
+    background-color: #dc3545; /* Bootstrap danger color */
+    border-color: #dc3545; /* Remove border */
+    border-radius: 20px; /* Rounded buttons */
+    padding: 10px 20px; /* Increased padding */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition */
+    /* animation: dance 1s infinite alternate; Add dance animation */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red on hover */
+    transform: scale(1.05); /* Slight scale on hover */
+    animation: none; /* Stop dancing on hover */
+}
+
+/* Input Styles */
+input {
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+input:focus {
+    outline: none; /* Remove outline */
+    box-shadow: 0 0 10px rgba(26, 115, 232, 0.5); /* Blue glow on focus */
+    /* animation: dance 1s infinite alternate; Add dance animation */
+}
+
+input:focus:active {
+    animation: none; /* Stop dancing on focus */
+}
+
+/* Dancing Animation */
+@keyframes dance {
+    0% { transform: translateY(0); }
+    25% { transform: translateY(-5px); }
+    50% { transform: translateY(5px); }
+    75% { transform: translateY(-5px); }
+    100% { transform: translateY(0); }
+}
+
+/* Text Styles */
+.text-danger {
+    font-size: 0.9em; /* Slightly smaller error text */
+    color: #e63946; /* A new vibrant red for error messages */
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px; /* Space between cards on mobile */
+    }
+}
+
+/* Header Section Styles */
+header {
+    background: linear-gradient(135deg, #1a73e8, #6a1b9a); /* Gradient from blue to purple */
+    color: white; /* White text */
+    padding: 20px 0; /* Padding for better spacing */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Subtle text shadow for better contrast */
+}
